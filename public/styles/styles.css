@@ -1,0 +1,53 @@
+.container {
+}
+
+.logo {
+  text-align: center;
+  font-family: "Noto Sans";
+}
+
+.searchicon {
+  font-size: 35px;
+  margin-top: 6px;
+  margin-left: -13px;
+}
+
+.searchbutton {
+  width: 100%;
+  margin-top: -30px;
+}
+
+.album {
+  border: 1px solid black;
+  height: 120px;
+  width: 100%;
+  background-color: #546E7A;
+}
+
+.topsong {
+  margin: -100px 0;
+}
+
+.topalbumpic {
+  margin-top: -12px;
+  margin-left: -10px;
+  border: 1px solid black;
+}
+
+.songresults, .songresult {
+  text-align: center;
+}
+
+.songresult {
+  /*border: 1px solid black;*/
+  margin-bottom: 7px;
+}
+
+.songresultpic {
+  margin-left: -2px;
+}
+
+/*.dropdown-button {
+  width: 100%;
+  border-radius: 0;
+}*/
