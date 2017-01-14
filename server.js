@@ -1,11 +1,18 @@
 // SERVER-SIDE JAVASCRIPT
+console.log('Server Sanity Check');
 
 //require express in our app
 var express = require('express');
+var bodyParser = require('body-parser');
 // generate a new express app and call it 'app'
 var app = express();
 // serve static files from public folder
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({ extended: true }));
+// need to add this so that we can accept request payloads
+app.use(bodyParser.json());
+
+
 
 /**********
  * ROUTES *
@@ -21,6 +28,7 @@ app.get('/', function homepage (req, res) {
 
 app.get('/templates/:name', function templates(req, res) {
   var name = req.params.name;
+  console.log(name, "name");
   res.sendFile(__dirname + '/views/templates/' + name + '.html');
 });
 
