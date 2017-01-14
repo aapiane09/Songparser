@@ -1,5 +1,7 @@
-angular
-    .module('Songparsr')
+console.log("IndexController Sanity Check!");
+
+
+angular.module('Songparsr')
     .controller('IndexController', IndexController);
 
 IndexController.$inject = ['$http'];
