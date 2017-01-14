@@ -10,7 +10,7 @@ function config ( $routeProvider, $locationProvider ) {
   $routeProvider
     .when('/',{
       controller:'IndexController',
-      templateURL:'/templates/indextemplate',
+      templateURL:'templates/indextemplate',
       controllerAs: 'indexCtrl'
     })
     .otherwise({
