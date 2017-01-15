@@ -1,13 +1,14 @@
 console.log("IndexController Sanity Check!");
 
 
-angular.module('Songparsr')
+angular
+    .module('Songparsr')
     .controller('IndexController', IndexController);
 
 IndexController.$inject = ['$http'];
 
 function IndexController ($http) {
-  console.log('IndexController Sanity Check!');
+  console.log('IndexController Function Sanity Check!');
   var vm = this;
   vm.exampleTrack = {
     trackName: 'Formation',

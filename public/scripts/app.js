@@ -1,25 +1,35 @@
 console.log('App.js Sanity Check');
 
-angular
-    .module('Songparsr', ['ngRoute', 'ui.materialize'])
-    .config(config);
+angular.module('Songparsr', ['ngRoute', 'ui.materialize'])
+       .config(config);
 
-config.$inject = ['$routeProvider', '$locationProvider'];
 
-function config ( $routeProvider, $locationProvider ) {
-  $routeProvider
-    .when('/',{
-      controller:'IndexController',
-      templateURL:'templates/indextemplate',
-      controllerAs: 'indexCtrl'
-    })
-    .otherwise({
-      redirectTo: '/'
-    })
+  ////////////
+  // ROUTES //
+  ////////////
 
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+
+  config.$inject = ['$routeProvider', '$locationProvider'];
+  function config (  $routeProvider,   $locationProvider  )  {
+$routeProvider
+  .when('/',{
+    controller:'IndexController',
+    templateUrl:'templates/indextemplate.html',
+    controllerAs: 'indexCtrl'
+  })
+  .when('/results/',{
+    controller:'TrackResultsController',
+    templateUrl:'templates/trackresultstemplate.html',
+    controllerAs: 'resultCtrl'
+  })
+  .otherwise({
+    redirectTo: '/'
+  })
+
+  $locationProvider
+  .html5Mode({
+    enabled: true,
+    requireBase: false
+  });
 
 }

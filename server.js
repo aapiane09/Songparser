@@ -29,7 +29,7 @@ app.get('/', function homepage (req, res) {
 app.get('/templates/:name', function templates(req, res) {
   var name = req.params.name;
   console.log(name, "name");
-  res.sendFile(__dirname + '/views/templates/' + name + '.html');
+  res.sendFile(__dirname + '/views/templates/' + name);
 });
 
 // ALL OTHER ROUTES (ANGULAR HANDLES)
