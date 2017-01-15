@@ -22,7 +22,7 @@ $routeProvider
     templateUrl:'templates/trackresultstemplate.html',
     controllerAs: 'resultCtrl'
   })
-  .when('/lyrics/',{
+  .when('/lyrics/:id',{
     controller:'LyricsController',
     templateUrl:'templates/lyricstemplate.html',
     controllerAs: 'lyricsCtrl'

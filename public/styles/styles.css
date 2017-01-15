@@ -33,6 +33,10 @@ h5 {
   background-color: #546E7A;
 }
 
+.songdata {
+  margin-top: -10px;
+}
+
 .topsong {
   font-size: 1.2em;
 }
