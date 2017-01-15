@@ -22,6 +22,11 @@ $routeProvider
     templateUrl:'templates/trackresultstemplate.html',
     controllerAs: 'resultCtrl'
   })
+  .when('/lyrics/',{
+    controller:'LyricsController',
+    templateUrl:'templates/lyricstemplate.html',
+    controllerAs: 'lyricsCtrl'
+  })
   .otherwise({
     redirectTo: '/'
   })

@@ -3,14 +3,27 @@
   font-family: "Noto Sans";
 }
 
+.searchbar {
+  margin: -20px 0 0 0;
+}
+
 .searchicon {
   font-size: 35px;
-  margin-top: 6px;
-  margin-left: -13px;
+  margin-left: -10px;
+  padding-top: 20px;
 }
 
 .searchbutton {
   width: 100%;
+}
+
+h5 {
+  margin: -15px 0 20px;
+  text-align: center;
+}
+
+.tophits {
+  margin: -15px 0;
 }
 
 .album {
@@ -21,22 +34,23 @@
 }
 
 .topsong {
-  /*margin: -100px 0;*/
+  font-size: 1.2em;
 }
 
 .topalbumpic {
   margin-top: -12px;
   margin-left: -10px;
   border: 1px solid black;
+  height: 100px;
 }
 
-.songresults, .songresult {
+.trackresults {
   text-align: center;
 }
 
-.songresult {
-  /*border: 1px solid black;*/
-  margin-bottom: 7px;
+.lyrics {
+  border: 1px solid black;
+  padding: 3px;
 }
 
 .songresultpic {

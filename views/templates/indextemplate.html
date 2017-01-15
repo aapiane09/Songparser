@@ -1,20 +1,19 @@
-<div class="tophits">
-  <div class="row">
-    <div class="col s12">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text album"> <!-- on hover add class z-depth-3-->
-          <div class="row">
-            <div class="col s4">
-              <img class="topalbumpic "src="http://rosupport.com/demo2/assets/images/gotm.jpg" alt="">
-            </div>
-            <div class="col s7">
-              <span class="songname topsong"><strong>{{indexCtrl.exampleTrack.trackName}}</strong><br></span>
-              <span class="artistname topsong"><em>{{indexCtrl.exampleTrack.artistName}}</em><br></span>
-              <span class="albumname topsong">{{indexCtrl.exampleTrack.albumName}}</span>
-            </div>
+<h5>Featured Artist: {{indexCtrl.topTracks[0].album.artists[0].name}}</h5>
+<div class="row tophits">
+  <div class="col s12" ng-repeat="track in indexCtrl.topTracks">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text album waves-effect waves-light"> <!-- on hover add class z-depth-3-->
+        <div class="row">
+          <div class="col s4">
+            <img class="topalbumpic "src="{{track.album.images[1].url}}" alt="">
+          </div>
+          <div class="col s7">
+            <span class="songname topsong"><strong>{{track.name}}</strong><br></span>
+            <!-- <span class="artistname topsong"><em>{{track.album.artists[0].name}}</em><br></span> -->
+            <span class="albumname topsong">{{track.album.name}}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div> <!-- .tophits-->
+</div><!-- .tophits-->
