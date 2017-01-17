@@ -14,7 +14,7 @@ function TrackResultsController ($routeParams, $location, $http, $scope) {
   vm.results =
   $http({
     method: 'GET',
-    url: 'https://api.spotify.com/v1/search?limit=6&type=track&q=' + trackName
+    url: 'https://api.spotify.com/v1/search?limit=15&type=track&q=' + trackName
   }).then(function successCallback(response) {
     vm.results = response.data.tracks;
     console.log(vm.results);
