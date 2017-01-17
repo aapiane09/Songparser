@@ -1,10 +1,14 @@
 <div class="trackresults">
-  <div class="row">
-    <div class="col s4 songresult">
-      <img class="songresultpic" src="http://rosupport.com/demo2/assets/images/gotm.jpg" alt=""><br>
-      <span class="songname"><strong>trackName</strong><br></span>
-      <span class="artistname"><em>artistName</em><br></span>
-      <span class="albumname">albumName</span>
+  <div class="row" ng-controller="TrackResultsController as resultsCtrl">
+    <div ng-repeat="track in resultsCtrl.results.items">
+      <a href="/lyrics/{{track.id}}">
+        <div class="col s4 songresult">
+          <img class="songresultpic topalbumpic" src="{{track.album.images[1].url}}" alt=""><br>
+          <span class="songname"><strong>{{track.name}}</strong><br></span>
+          <span class="artistname"><em>{{track.album.artists[0].name}}</em><br></span>
+          <span class="albumname">{{track.album.name}}</span>
+        </div>
+      </a>
     </div>
   </div>
 </div>

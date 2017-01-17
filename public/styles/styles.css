@@ -79,6 +79,11 @@ span {
   margin-left: -2px;
 }
 
+.lyrics {
+  background-color: #FFD034;
+  padding: 5px;
+}
+
 /*.dropdown-button {
   width: 100%;
   border-radius: 0;

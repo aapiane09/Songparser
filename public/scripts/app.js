@@ -17,7 +17,7 @@ $routeProvider
     templateUrl:'templates/indextemplate.html',
     controllerAs: 'indexCtrl'
   })
-  .when('/results/',{
+  .when('/results/:trackId',{
     controller:'TrackResultsController',
     templateUrl:'templates/trackresultstemplate.html',
     controllerAs: 'resultCtrl'
